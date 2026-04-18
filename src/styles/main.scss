@@ -1,3 +1,32 @@
-body {
-  margin: 0;
+@import 'blocks/variables';
+@import 'blocks/mixins';
+@import 'blocks/header';
+@import 'blocks/icon';
+@import 'blocks/menu';
+@import 'blocks/nav';
+@import 'blocks/page';
+@import 'blocks/top-bar';
+@import 'blocks/section-title';
+@import 'blocks/about-us';
+@import 'blocks/product';
+@import 'blocks/recommended';
+
+.logo {
+  width: 125px;
+  height: auto;
+}
+
+.main {
+  background-color: white;
+
+  &__content {
+    display: grid;
+    row-gap: 96px;
+    padding-block: 96px;
+
+    @include onTablet {
+      padding-block: 120px;
+      row-gap: 120px;
+    }
+  }
 }

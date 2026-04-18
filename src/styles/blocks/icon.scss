@@ -1,0 +1,19 @@
+.icon {
+  height: 24px;
+  width: 24px;
+  display: block;
+
+  &--phone {
+    background-image: url(../../../icons/icon.png);
+    background-repeat: no-repeat;
+  }
+
+  &--menu {
+    background-image: url(../../../icons/burger.png);
+    background-repeat: no-repeat;
+  }
+
+  &--close {
+    background-image: url(../../../icons/Icon-Close.png);
+  }
+}
