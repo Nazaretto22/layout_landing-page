@@ -1,38 +1,37 @@
 .about-us {
-  --columns: 2;
-
-  display: grid;
-  column-gap: 20px;
-  grid-template-columns: repeat(var(--columns), 1fr);
-
-  @include onTablet {
-    --columns: 6;
-
-    column-gap: 24px;
-  }
-
-  @include onDesktop {
-    --columns: 12;
-  }
+  @include page-grid;
 
   &__title {
     grid-column: 1 / -1;
 
-    @include onTablet {
-      grid-column: 1/ 4;
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include on-desktop {
+      grid-column: span 5;
     }
   }
 
   &__content {
     grid-column: 1 / -1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 4 / 7;
+    }
+
+    @include on-desktop {
+      grid-column: span 5;
     }
   }
 
   &__description {
+    font-family: $mono-font;
+    display: grid;
+    row-gap: 16px;
+
     margin: 0;
+    margin-bottom: 40px;
     padding: 0;
     list-style: none;
     font-weight: 400;
