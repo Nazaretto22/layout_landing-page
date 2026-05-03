@@ -14,5 +14,10 @@
     font-size: 22px;
     line-height: 22px;
     letter-spacing: 2px;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

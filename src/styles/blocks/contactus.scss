@@ -28,6 +28,7 @@
   }
 
   &__input {
+    box-sizing: border-box;
     font-family: $mono-font;
     width: 100%;
     height: 48px;
@@ -58,19 +59,19 @@
     width: 100%;
     height: 56px;
     padding: 0 48px;
-    background: #292929;
-    border: none;
+    background: #f8f8fa;
+    border: 2px solid #f0f1f4;
     border-radius: 8px;
     cursor: pointer;
     font-family: $main-font;
     font-size: 16px;
     font-weight: 700;
-    color: #fff;
+    color: #292929;
 
     &:hover {
-      background: #f8f8fa;
-      border: 2px solid #f0f1f4;
-      color: #292929;
+      background: #292929;
+      border: 2px solid #292929;
+      color: #fff;
     }
 
     &:active {
@@ -81,7 +82,6 @@
 
   &__info {
     display: grid;
-    gap: 32px;
     align-content: start;
   }
 
@@ -94,8 +94,15 @@
   }
 
   &__info-value {
+    margin: 0;
     font-size: 16px;
     font-family: $mono-font;
     line-height: 140%;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

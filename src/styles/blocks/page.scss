@@ -18,7 +18,7 @@
     left: 0;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease; // Додав плавний перехід для краси
+    transition: opacity 0.3s ease;
 
     &:target {
       opacity: 1;

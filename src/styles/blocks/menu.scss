@@ -4,14 +4,17 @@
   background-color: $bg-menu;
   font-weight: 700;
   text-transform: uppercase;
-  padding-inline: 20px;
+  padding-inline: 24px;
 
   &__top {
-    margin-bottom: 32px;
-
     @include on-tablet {
+      padding-block: 64px;
       margin-bottom: 0;
     }
+  }
+
+  &__bottom {
+    padding-left: 20px;
   }
 
   &__nav {
