@@ -11,6 +11,10 @@
   &--menu {
     background-image: url(../../icons/burger.png);
     background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url(../../icons/vector.png);
+    }
   }
 
   &--close {
